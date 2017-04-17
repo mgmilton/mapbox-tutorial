@@ -14,6 +14,7 @@ While creating this tutorial, I built a project from scratch and linked to seque
 Clone and set up the starter repo:
 ```
 git clone https://github.com/CPowell23/mapbox-tutorial.git
+cd mapbox-tutorial
 bundle
 rails db:create
 rails db:migrate
