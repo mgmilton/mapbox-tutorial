@@ -1,6 +1,17 @@
 # Mapbox JS Beginner Tutorial
 
-## Introduction
+## Outline
+  1. [Introduction](#intro)
+  2. [What You Should Already Know](#prereqs)
+  3. [Mapbox Developer Sign Up](#signup)
+  4. [Protect API Keys](#api_keys)
+  5. [Adding a Basemap](#basemap)
+  6. [Markers](#markers)
+  7. [Geolocation: Zooming the map to the User's Current Location](#geolocation)
+  8. [Directions](#directions)
+  9. [Final Repo](#final_repo)
+
+## <a name="intro"></a>Introduction
 This tutorial will walk you through how to build the following website:
 
 ![alt text][diagram]
@@ -22,13 +33,13 @@ rails db:seed
 rails db:test:prepare
 ```
 
-## What You Should Already Know
+## <a name="prereqs"></a>What You Should Already Know
   - Rails
 
-## Developer Sign Up
+## Mapbox Developer Sign Up
 Sign up for a Mapbox Developer account and get a [free access token](https://www.mapbox.com/studio/account/tokens/).
 
-## Protect API Keys
+## <a name="api_keys"></a>Protect API Keys
 Before you do anything, you should install the [Ruby figaro gem](https://github.com/laserlemon/figaro) to protect your API keys. As a new developer, when you start working with APIs, you may be tempted to just get things working first and then go back and hide your api keys later. This will inevitably lead to you pushing your keys up to Github. Don't do it!
 
 Add figaro to your Gemfile for all environments
@@ -47,7 +58,7 @@ In config/application.yml, add this line of code and insert your Mapbox access t
 MAPBOX_ACCESS_TOKEN: "pk.oiZ3Bld......eyE1Ij"
 ```
 
-## Adding a Basemap
+## <a name="basemap"></a>Adding a Basemap
 ### First, you'll need to set up a view for your map.
 
 Add a route
@@ -160,7 +171,7 @@ Notice that you can alter the **latitude, longitude, zoomLevel, and mapStyle** f
 
 Fire up the rails server, visit the root path, and you should have a basemap!
 
-## Markers
+## <a name="markers"></a>Markers
 ### Adding Markers
 Once you add a basemap, the next thing you'll most likely want to do is add some markers. In the starter repo, remember that we already have an API that serves up some JSON data about our state capitals.
 
@@ -255,7 +266,7 @@ Adding a popup box for markers is really easy. Simply add a title and/or descrip
 
 Check out the pop up boxes in your browser!
 
-## Geolocation: Zooming the map to the User's Current Location
+## <a name="geolocation"></a>Geolocation: Zooming the map to the User's Current Location
 A common feature you may want to add for users is the ability to click a button and zoom to their current location.
 
 ### First, you'll need to add a button to your map.
@@ -337,7 +348,7 @@ Now check it out in your browser! When you click the geolocate button, the map s
 
 **NOTE**: Notice that it takes a while for the zoom to happen after you click the button. You may want to consider adding a flash message that goes away after a few seconds to let the user know that the map is working to find their current location.
 
-## Directions
+## <a name="directions"></a>Directions
 Before we start coding, let's examine the following URL. This is an example Google directions URL:
 ```
 https://www.google.com/maps/dir//Little+Rock,+Arkansas?hl=en-US
@@ -388,7 +399,7 @@ Coming soon...
 ### Toggling Shape Layers
 Coming soon...
 
-## Final Repo
+## <a name="final_repo"></a>Final Repo
 Maybe you want to skip the code along and clone down the final repo or maybe you got lost somewhere along the way. In any case, you can clone down and set up the final repo with these command line instructions:
 ```
 git clone https://github.com/CPowell23/mapbox-tutorial.git
