@@ -1,7 +1,7 @@
 # Mapbox JS Beginner Tutorial
 
 ## Introduction
-This tutorial will walk you through how to build the following website: alksdjflasdfj.
+This tutorial will walk you through how to build the following website:
 
 ![alt text][diagram]
 
@@ -11,7 +11,15 @@ While creating this tutorial, I built a project from scratch and linked to seque
 
 **NOTE**: In the example API, I used the [Ruby geocoder gem](https://github.com/alexreisner/geocoder) to calculate the longitude and latitude coordinates for each state capital, given the city and state. You'll need longitude and latitude coordinates to be able to add points to your map. If you already know the coordinates for points you want to add, there is no need to use geocoding. But if you only know location information (i.e. addresses), you'll need to calculate the coordinates for these points before you can add them.
 
-[Link to starter repo]()
+Clone and set up the starter repo:
+```
+git clone https://github.com/CPowell23/mapbox-tutorial.git
+bundle
+rails db:create
+rails db:migrate
+rails db:seed
+rails db:test:prepare
+```
 
 ## What You Should Already Know
   - Rails
