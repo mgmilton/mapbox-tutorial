@@ -253,6 +253,8 @@ Adding a popup box for markers is really easy. Simply add a title and/or descrip
                 "description": "State capital of " + capital["state"]}
 ```
 
+Check out the pop up boxes in your browser!
+
 ## Geolocation: Zooming the map to the User's Current Location
 A common feature you may want to add for users is the ability to click a button and zoom to their current location.
 
