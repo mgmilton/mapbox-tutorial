@@ -387,3 +387,16 @@ Coming soon...
 Coming soon...
 ### Toggling Shape Layers
 Coming soon...
+
+## Final Repo
+Maybe you want to skip the code along and clone down the final repo or maybe you got lost somewhere along the way. In any case, you can clone down and set up the final repo with these command line instructions:
+```
+git clone https://github.com/CPowell23/mapbox-tutorial.git
+cd mapbox-tutorial
+git checkout add_directions
+bundle
+rails db:create
+rails db:migrate
+rails db:seed
+rails db:test:prepare
+```
