@@ -36,7 +36,7 @@ rails db:test:prepare
 ## <a name="prereqs"></a>What You Should Already Know
   - Rails
 
-## Mapbox Developer Sign Up
+## <a name="signup"></a>Mapbox Developer Sign Up
 Sign up for a Mapbox Developer account and get a [free access token](https://www.mapbox.com/studio/account/tokens/).
 
 ## <a name="api_keys"></a>Protect API Keys
