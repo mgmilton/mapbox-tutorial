@@ -15,7 +15,6 @@ require "sprockets/railtie"
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
-MAPBOX_ACCESS_TOKEN: "pk.eyJ1IjoibWdtaWx0b24iLCJhIjoiY2pkbDA4bHdyMDFobjMzbzJnbG11anJjZyJ9.YlufpwYMCgAR2QGfxV0jaQ"
 
 module UsStateCapitals
   class Application < Rails::Application
